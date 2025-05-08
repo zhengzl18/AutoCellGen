@@ -99,11 +99,11 @@ Transistor::Transistor(const std::vector<std::string>& tokens) {
 	}
 */
 	for (auto iter = tokens.begin() + 6; iter != tokens.end(); ++iter) {
-		if (iter->substr(0, 2) == "W=") {
+		if (iter->substr(0, 2) == "w=") {
 			//std::cout << "Width" << std::endl;
 			width = stod(iter->substr(2, iter->size() - 1));
 		}
-		else if (iter->substr(0, 2) == "L=") {
+		else if (iter->substr(0, 2) == "l=") {
 			//std::cout << "Length" << std::endl;
 			length = stod(iter->substr(2, iter->size() - 1));
 		}
